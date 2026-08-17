@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Baron Sam B — Assistant Professor & Medical Image Processing Researcher</title>
+<meta name="description" content="Portfolio of Baron Sam B, Assistant Professor of Computer Science and IEEE Coordinator at Sathyabama University, Chennai. Researcher in Medical Image Restoration (MR/CT imaging), with 21 Scopus-indexed publications.">
+<meta name="theme-color" content="#0a0e17">
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="Baron Sam B — Assistant Professor & Medical Image Processing Researcher">
+<meta property="og:description" content="Researcher in Medical Image Restoration (MR/CT of the human abdomen). Assistant Professor & IEEE Coordinator, Computer Science, Sathyabama University, Chennai.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='none' stroke='%234dd8e8' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='26' fill='none' stroke='%238b7cf6' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='6' fill='%234dd8e8'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Baron Sam B",
+  "jobTitle": "Assistant Professor, Computer Science",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Sathyabama University, Chennai" },
+  "email": "mailto:baronsam1988@gmail.com",
+  "telephone": "+91-9865929424",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "SBSR Cottage, Pandivilai, Meckamandapam (P.O)",
+    "addressRegion": "Kanyakumari District, Tamil Nadu",
+    "postalCode": "629166",
+    "addressCountry": "IN"
+  },
+  "knowsLanguage": ["English", "Tamil"],
+  "alumniOf": [
+    "CSI Institute of Technology, Thovalai (Anna University)",
+    "VelTech Technical University, Chennai",
+    "Annamalai University, Chidambaram"
+  ]
+}
+</script>
+
+<style>
+  /* ============ Design tokens ============ */
+  :root{
+    --bg:#0a0e17;
+    --bg-elev:#0d1220;
+    --surface:#10151f;
+    --surface-2:#161c29;
+    --border:rgba(232,236,244,0.09);
+    --border-strong:rgba(232,236,244,0.16);
+    --text:#e8ecf4;
+    --text-muted:#8b93a8;
+    --text-faint:#5c6478;
+    --cyan:#4dd8e8;
+    --cyan-soft:rgba(77,216,232,0.12);
+    --violet:#8b7cf6;
+    --violet-soft:rgba(139,124,246,0.12);
+    --amber:#f0b860;
+    --shadow:0 20px 60px -20px rgba(0,0,0,0.6);
+    --radius-sm:10px;
+    --radius-md:16px;
+    --radius-lg:26px;
+    --ease:cubic-bezier(.22,.9,.32,1);
+    --nav-h:76px;
+    --font-display:'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+    --font-body:'Inter', 'Segoe UI', system-ui, sans-serif;
+    --font-mono:'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  }
+  html[data-theme="light"]{
+    --bg:#f4f6fa;
+    --bg-elev:#eef1f7;
+    --surface:#ffffff;
+    --surface-2:#eef1f7;
+    --border:rgba(20,24,33,0.09);
+    --border-strong:rgba(20,24,33,0.16);
+    --text:#161a24;
+    --text-muted:#565f72;
+    --text-faint:#8891a3;
+    --cyan:#0a8fa3;
+    --cyan-soft:rgba(10,143,163,0.10);
+    --violet:#5b4fd6;
+    --violet-soft:rgba(91,79,214,0.10);
+    --amber:#a56a12;
+    --shadow:0 20px 50px -24px rgba(20,24,33,0.25);
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth; -webkit-text-size-adjust:100%;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *,*::before,*::after{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    transition:background 0.4s var(--ease), color 0.4s var(--ease);
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit;}
+  ::selection{background:var(--cyan); color:#03151a;}
+
+  h1,h2,h3,h4{font-family:var(--font-display); margin:0; letter-spacing:-0.01em;}
+  p{margin:0;}
+  ul{margin:0; padding:0; list-style:none;}
+
+  .container{width:min(1180px, 92vw); margin-inline:auto;}
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
+    outline:2px solid var(--cyan);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .skip-link{
+    position:absolute; left:1rem; top:-60px;
+    background:var(--cyan); color:#03151a; padding:0.7rem 1.2rem;
+    border-radius:8px; font-weight:600; z-index:1000; transition:top 0.25s var(--ease);
+  }
+  .skip-link:focus{top:1rem;}
+
+  /* ============ background texture ============ */
+  .bg-grid{
+    position:fixed; inset:0; z-index:-2; pointer-events:none;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size:56px 56px;
+    -webkit-mask-image:radial-gradient(ellipse 90% 60% at 50% 0%, #000 10%, transparent 75%);
+    mask-image:radial-gradient(ellipse 90% 60% at 50% 0%, #000 10%, transparent 75%);
+    opacity:0.5;
+  }
+  .bg-glow{
+    position:fixed; z-index:-1; pointer-events:none; inset:0; overflow:hidden;
+  }
+  .bg-glow::before,.bg-glow::after{
+    content:""; position:absolute; width:60vw; height:60vw; border-radius:50%;
+    filter:blur(120px); opacity:0.16;
+  }
+  .bg-glow::before{ background:var(--cyan); top:-20vw; right:-15vw; }
+  .bg-glow::after{ background:var(--violet); bottom:-25vw; left:-15vw; }
+
+  /* ============ navbar ============ */
+  header.nav{
+    position:fixed; top:0; left:0; right:0; z-index:500;
+    height:var(--nav-h);
+    display:flex; align-items:center;
+    background:color-mix(in srgb, var(--bg) 72%, transparent);
+    backdrop-filter:blur(16px) saturate(140%);
+    -webkit-backdrop-filter:blur(16px) saturate(140%);
+    border-bottom:1px solid var(--border);
+    transition:background 0.4s var(--ease), border-color 0.4s var(--ease);
+  }
+  .nav-inner{
+    width:min(1180px, 92vw); margin-inline:auto;
+    display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  }
+  .brand{
+    display:flex; align-items:center; gap:0.6rem;
+    font-family:var(--font-display); font-weight:700; font-size:1.05rem;
+    text-decoration:none; color:var(--text);
+  }
+  .brand-mark{
+    width:34px; height:34px; border-radius:50%;
+    display:grid; place-items:center;
+    background:conic-gradient(from 140deg, var(--cyan), var(--violet), var(--cyan));
+    position:relative;
+  }
+  .brand-mark::after{
+    content:""; position:absolute; inset:5px; border-radius:50%; background:var(--bg);
+  }
+  .brand-mark::before{
+    content:""; position:absolute; width:6px; height:6px; border-radius:50%;
+    background:var(--cyan); box-shadow:0 0 8px var(--cyan); z-index:2;
+  }
+  .brand small{color:var(--text-muted); font-weight:500; font-family:var(--font-body); font-size:0.72rem; display:block; letter-spacing:0.03em;}
+
+  nav.primary{display:flex; align-items:center; gap:1.9rem;}
+  nav.primary a{
+    font-size:0.86rem; font-weight:500; text-decoration:none; color:var(--text-muted);
+    position:relative; padding:0.3rem 0.05rem;
+    transition:color 0.25s var(--ease);
+  }
+  nav.primary a::after{
+    content:""; position:absolute; left:0; right:100%; bottom:-4px; height:2px;
+    background:linear-gradient(90deg, var(--cyan), var(--violet));
+    transition:right 0.3s var(--ease); border-radius:2px;
+  }
+  nav.primary a:hover, nav.primary a:focus-visible, nav.primary a.active{color:var(--text);}
+  nav.primary a:hover::after, nav.primary a:focus-visible::after, nav.primary a.active::after{right:0;}
+
+  .nav-actions{display:flex; align-items:center; gap:0.6rem;}
+
+  .icon-btn{
+    width:42px; height:42px; border-radius:50%;
+    border:1px solid var(--border-strong);
+    background:var(--surface);
+    color:var(--text);
+    display:grid; place-items:center;
+    cursor:pointer;
+    transition:transform 0.25s var(--ease), border-color 0.25s var(--ease), background 0.25s var(--ease);
+  }
+  .icon-btn:hover{transform:translateY(-2px); border-color:var(--cyan);}
+  .icon-btn svg{width:18px; height:18px;}
+
+  #theme-toggle .sun{display:none;}
+  html[data-theme="light"] #theme-toggle .moon{display:none;}
+  html[data-theme="light"] #theme-toggle .sun{display:block;}
+
+  .menu-btn{display:none;}
+
+  /* mobile nav */
+  .mobile-panel{
+    position:fixed; inset:var(--nav-h) 0 0 0; z-index:499;
+    background:color-mix(in srgb, var(--bg) 96%, transparent);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1.6rem;
+    transform:translateY(-8px); opacity:0; pointer-events:none;
+    transition:opacity 0.3s var(--ease), transform 0.3s var(--ease);
+  }
+  .mobile-panel.open{opacity:1; transform:translateY(0); pointer-events:auto;}
+  .mobile-panel a{
+    font-family:var(--font-display); font-size:1.5rem; font-weight:600;
+    text-decoration:none; color:var(--text);
+  }
+
+  @media (max-width: 900px){
+    nav.primary{display:none;}
+    .menu-btn{display:grid;}
+  }
+
+  /* ============ buttons ============ */
+  .btn{
+    display:inline-flex; align-items:center; gap:0.55rem;
+    padding:0.85rem 1.5rem; border-radius:999px;
+    font-family:var(--font-body); font-weight:600; font-size:0.92rem;
+    text-decoration:none; cursor:pointer; border:1px solid transparent;
+    transition:transform 0.25s var(--ease), box-shadow 0.25s var(--ease), background 0.25s var(--ease), border-color .25s var(--ease);
+  }
+  .btn-primary{
+    background:linear-gradient(120deg, var(--cyan), var(--violet));
+    color:#04121a;
+  }
+  .btn-primary:hover{transform:translateY(-3px); box-shadow:0 14px 30px -12px var(--cyan-soft);}
+  .btn-ghost{
+    background:transparent; color:var(--text); border-color:var(--border-strong);
+  }
+  .btn-ghost:hover{border-color:var(--cyan); color:var(--cyan); transform:translateY(-3px);}
+
+  /* ============ section shell ============ */
+  section{padding:7.5rem 0; position:relative; scroll-margin-top:var(--nav-h);}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:0.55rem;
+    font-family:var(--font-mono); font-size:0.76rem; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--cyan); margin-bottom:1rem;
+  }
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--cyan);}
+  .section-head{max-width:640px; margin-bottom:3.2rem;}
+  .section-head h2{font-size:clamp(1.8rem, 3.4vw, 2.6rem); font-weight:700;}
+  .section-head p{color:var(--text-muted); margin-top:0.85rem; font-size:1.02rem;}
+
+  .reveal{opacity:0; transform:translateY(28px); transition:opacity 0.8s var(--ease), transform 0.8s var(--ease);}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ============ hero ============ */
+  .hero{
+    min-height:100svh; display:flex; align-items:center;
+    padding-top:calc(var(--nav-h) + 2.5rem);
+    position:relative;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.15fr 0.85fr; gap:3rem; align-items:center;
+  }
+  .hero-eyebrow{
+    font-family:var(--font-mono); font-size:0.8rem; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--text-muted); display:flex; align-items:center; gap:0.6rem; margin-bottom:1.4rem;
+  }
+  .pulse-dot{
+    width:8px; height:8px; border-radius:50%; background:var(--cyan);
+    box-shadow:0 0 0 0 var(--cyan-soft); animation:pulse 2.4s infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(77,216,232,0.45);}
+    70%{box-shadow:0 0 0 12px rgba(77,216,232,0);}
+    100%{box-shadow:0 0 0 0 rgba(77,216,232,0);}
+  }
+  .hero h1{
+    font-size:clamp(2.5rem, 6vw, 4.4rem); line-height:1.04; font-weight:700;
+  }
+  .hero h1 span{
+    background:linear-gradient(120deg, var(--cyan), var(--violet));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero-role{
+    margin-top:1.15rem; font-size:clamp(1.05rem, 2vw, 1.3rem); color:var(--text-muted); font-weight:500;
+    max-width:34rem;
+  }
+  .hero-desc{margin-top:1.4rem; color:var(--text-muted); max-width:34rem; font-size:1rem;}
+  .hero-cta{display:flex; gap:1rem; margin-top:2.4rem; flex-wrap:wrap;}
+
+  .hero-stats{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:0.9rem; margin-top:3rem; max-width:38rem;
+  }
+  .stat{
+    padding:1rem 0.6rem; border:1px solid var(--border); border-radius:var(--radius-sm);
+    background:var(--surface); text-align:center;
+  }
+  .stat strong{
+    display:block; font-family:var(--font-mono); font-size:1.4rem; color:var(--cyan);
+  }
+  .stat span{display:block; font-size:0.68rem; color:var(--text-faint); margin-top:0.3rem; text-transform:uppercase; letter-spacing:0.05em;}
+
+  /* signature scan visual */
+  .scan-wrap{
+    position:relative; aspect-ratio:1/1; max-width:420px; margin-inline:auto;
+  }
+  .scan-ring{
+    position:absolute; inset:0; border-radius:50%;
+    border:1px solid var(--border-strong);
+  }
+  .scan-ring.r2{inset:12%; border-color:var(--border);}
+  .scan-ring.r3{inset:26%; border-color:var(--border-strong);}
+  .scan-ring.r4{inset:41%; background:radial-gradient(circle at 35% 30%, var(--cyan-soft), transparent 70%);}
+  .scan-core{
+    position:absolute; inset:44%; border-radius:50%;
+    background:linear-gradient(135deg, var(--cyan), var(--violet));
+    box-shadow:0 0 50px 6px var(--cyan-soft);
+  }
+  .scan-crosshair{position:absolute; inset:0;}
+  .scan-crosshair::before,.scan-crosshair::after{
+    content:""; position:absolute; background:var(--border-strong);
+  }
+  .scan-crosshair::before{left:50%; top:4%; bottom:4%; width:1px; transform:translateX(-50%);}
+  .scan-crosshair::after{top:50%; left:4%; right:4%; height:1px; transform:translateY(-50%);}
+  .scan-sweep{
+    position:absolute; inset:0; border-radius:50%; overflow:hidden;
+  }
+  .scan-sweep::before{
+    content:""; position:absolute; inset:-2px;
+    background:conic-gradient(from 0deg, transparent 0deg, var(--cyan) 8deg, transparent 55deg);
+    animation:spin 5.5s linear infinite;
+    opacity:0.75;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .scan-tick{
+    position:absolute; font-family:var(--font-mono); font-size:0.65rem; color:var(--text-faint);
+    letter-spacing:0.05em;
+  }
+  .scan-tick.t1{top:-1.6rem; left:50%; transform:translateX(-50%);}
+  .scan-tick.t2{bottom:-1.6rem; left:50%; transform:translateX(-50%);}
+  .scan-tick.t3{top:50%; left:-3.4rem; transform:translateY(-50%);}
+  .scan-tick.t4{top:50%; right:-3.6rem; transform:translateY(-50%);}
+
+  @media (max-width: 980px){
+    .hero-grid{grid-template-columns:1fr; text-align:left;}
+    .scan-wrap{max-width:260px; margin-top:2.5rem;}
+    .hero-stats{grid-template-columns:repeat(2,1fr);}
+  }
+
+  /* ============ about ============ */
+  .about-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:3rem; align-items:start;}
+  .about-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg);
+    padding:2.2rem; box-shadow:var(--shadow);
+  }
+  .about-card p{color:var(--text-muted); font-size:1.02rem;}
+  .about-card + .about-card{margin-top:1.4rem;}
+  .info-list{margin-top:1.6rem; display:grid; gap:0.9rem;}
+  .info-row{
+    display:flex; justify-content:space-between; gap:1rem; padding-bottom:0.9rem;
+    border-bottom:1px dashed var(--border);
+    font-size:0.92rem;
+  }
+  .info-row:last-child{border-bottom:none; padding-bottom:0;}
+  .info-row dt{color:var(--text-faint); font-family:var(--font-mono); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em;}
+  .info-row dd{margin:0; text-align:right; font-weight:500;}
+
+  .quals{display:grid; gap:0.9rem;}
+  .qual-item{
+    display:flex; align-items:center; gap:1rem;
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md);
+    padding:1.1rem 1.3rem;
+    transition:border-color .3s var(--ease), transform .3s var(--ease);
+  }
+  .qual-item:hover{border-color:var(--cyan); transform:translateX(4px);}
+  .qual-badge{
+    font-family:var(--font-mono); font-size:0.7rem; font-weight:600; padding:0.35rem 0.6rem;
+    border-radius:6px; background:var(--cyan-soft); color:var(--cyan); white-space:nowrap;
+  }
+  .qual-item strong{font-size:0.96rem; font-weight:600;}
+  .qual-item small{display:block; color:var(--text-muted); font-size:0.82rem; margin-top:0.15rem;}
+
+  @media (max-width: 900px){ .about-grid{grid-template-columns:1fr;} }
+
+  /* ============ skills ============ */
+  .skills-grid{display:grid; grid-template-columns:1fr 1fr; gap:1.6rem;}
+  .skill-panel{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg);
+    padding:2rem;
+  }
+  .skill-panel h3{font-size:1.15rem; display:flex; align-items:center; gap:0.6rem; margin-bottom:1.3rem;}
+  .skill-panel h3 .dot{width:9px; height:9px; border-radius:50%; background:var(--violet);}
+  .tag-cloud{display:flex; flex-wrap:wrap; gap:0.6rem;}
+  .tag{
+    font-family:var(--font-mono); font-size:0.82rem; padding:0.5rem 0.9rem;
+    border-radius:999px; border:1px solid var(--border-strong); color:var(--text-muted);
+    transition:all .25s var(--ease);
+  }
+  .tag:hover{color:var(--cyan); border-color:var(--cyan); background:var(--cyan-soft); transform:translateY(-2px);}
+  @media (max-width: 800px){ .skills-grid{grid-template-columns:1fr;} }
+
+  /* ============ timeline (experience/education) ============ */
+  .timeline{position:relative; margin-left:0.4rem;}
+  .timeline::before{
+    content:""; position:absolute; left:9px; top:6px; bottom:6px; width:2px;
+    background:linear-gradient(var(--cyan), var(--violet));
+    opacity:0.35;
+  }
+  .tl-item{position:relative; padding-left:2.6rem; margin-bottom:2.4rem;}
+  .tl-item:last-child{margin-bottom:0;}
+  .tl-dot{
+    position:absolute; left:0; top:4px; width:20px; height:20px; border-radius:50%;
+    background:var(--surface); border:2px solid var(--cyan); display:grid; place-items:center;
+  }
+  .tl-dot::after{content:""; width:7px; height:7px; border-radius:50%; background:var(--cyan);}
+  .tl-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md);
+    padding:1.5rem 1.7rem; transition:border-color .3s var(--ease), transform .3s var(--ease);
+  }
+  .tl-card:hover{border-color:var(--cyan); transform:translateY(-3px);}
+  .tl-period{font-family:var(--font-mono); font-size:0.78rem; color:var(--cyan); letter-spacing:0.03em;}
+  .tl-card h3{font-size:1.15rem; margin-top:0.4rem;}
+  .tl-org{color:var(--text-muted); font-size:0.9rem; margin-top:0.2rem; font-weight:500;}
+  .tl-card p{color:var(--text-muted); margin-top:0.7rem; font-size:0.94rem;}
+
+  /* ============ education cards ============ */
+  .edu-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; margin-top:2.6rem;}
+  .edu-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md);
+    padding:1.4rem; text-align:left;
+  }
+  .edu-card .yr{font-family:var(--font-mono); color:var(--violet); font-size:0.78rem;}
+  .edu-card h4{font-size:0.96rem; margin-top:0.5rem; font-weight:600;}
+  .edu-card p{color:var(--text-muted); font-size:0.86rem; margin-top:0.3rem;}
+  @media (max-width: 900px){ .edu-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width: 620px){ .edu-grid{grid-template-columns:1fr;} }
+
+  /* ============ research ============ */
+  .research-hero{
+    display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-bottom:3rem;
+  }
+  .research-focus{
+    background:linear-gradient(160deg, var(--surface), var(--surface-2));
+    border:1px solid var(--border); border-radius:var(--radius-lg); padding:2.2rem;
+    position:relative; overflow:hidden;
+  }
+  .research-focus::before{
+    content:""; position:absolute; width:280px; height:280px; border-radius:50%;
+    background:var(--cyan-soft); filter:blur(50px); top:-100px; right:-100px;
+  }
+  .research-focus h3{font-size:1.3rem; position:relative;}
+  .research-focus p{color:var(--text-muted); margin-top:0.9rem; position:relative; font-size:0.97rem;}
+  .metric-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:0.9rem;}
+  .metric{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md);
+    padding:1.3rem 1rem; text-align:center;
+  }
+  .metric strong{display:block; font-family:var(--font-mono); font-size:1.8rem; color:var(--violet);}
+  .metric span{font-size:0.72rem; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.05em;}
+  @media (max-width: 900px){ .research-hero{grid-template-columns:1fr;} .metric-grid{grid-template-columns:1fr 1fr;} }
+
+  .pub-tabs{display:flex; flex-wrap:wrap; gap:0.6rem; margin-bottom:1.6rem;}
+  .pub-tab{
+    font-family:var(--font-mono); font-size:0.78rem; padding:0.55rem 1rem; border-radius:999px;
+    border:1px solid var(--border-strong); background:transparent; color:var(--text-muted); cursor:pointer;
+    transition:all .25s var(--ease);
+  }
+  .pub-tab[aria-selected="true"]{background:var(--cyan); color:#04121a; border-color:var(--cyan);}
+  .pub-panel{display:none;}
+  .pub-panel.active{display:block;}
+  .pub-list{display:grid; gap:0.9rem;}
+  .pub-item{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-sm);
+    padding:1.1rem 1.3rem; font-size:0.92rem; color:var(--text-muted);
+    transition:border-color .25s var(--ease);
+  }
+  .pub-item:hover{border-color:var(--violet);}
+  .pub-item strong{color:var(--text); font-weight:600;}
+  .pub-item .src{display:block; margin-top:0.35rem; font-size:0.82rem; color:var(--text-faint); font-style:italic;}
+
+  /* ============ projects ============ */
+  .proj-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1.4rem;}
+  .proj-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg);
+    padding:1.9rem; position:relative;
+  }
+  .proj-card h3{font-size:1.1rem; margin-bottom:0.8rem; display:flex; gap:0.6rem; align-items:flex-start;}
+  .proj-card p{color:var(--text-muted); font-size:0.93rem; margin-bottom:1rem;}
+  .chip-row{display:flex; flex-wrap:wrap; gap:0.5rem;}
+  .chip{
+    font-family:var(--font-mono); font-size:0.72rem; padding:0.32rem 0.65rem;
+    border-radius:6px; background:var(--violet-soft); color:var(--violet);
+  }
+  @media (max-width: 850px){ .proj-grid{grid-template-columns:1fr;} }
+
+  /* ============ achievements ============ */
+  .ach-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem;}
+  .ach-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md);
+    padding:1.5rem; text-align:left; transition:transform .3s var(--ease), border-color .3s var(--ease);
+  }
+  .ach-card:hover{transform:translateY(-4px); border-color:var(--amber);}
+  .ach-num{font-family:var(--font-mono); color:var(--amber); font-size:0.78rem; margin-bottom:0.6rem; display:block;}
+  .ach-card p{font-size:0.9rem; color:var(--text-muted);}
+  @media (max-width: 900px){ .ach-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width: 600px){ .ach-grid{grid-template-columns:1fr;} }
+
+  /* ============ contact ============ */
+  .contact-wrap{
+    display:grid; grid-template-columns:1fr 1fr; gap:2.4rem; align-items:center;
+    background:linear-gradient(160deg, var(--surface), var(--surface-2));
+    border:1px solid var(--border); border-radius:var(--radius-lg);
+    padding:3rem; position:relative; overflow:hidden;
+  }
+  .contact-wrap::before{
+    content:""; position:absolute; width:360px; height:360px; border-radius:50%;
+    background:var(--violet-soft); filter:blur(70px); bottom:-140px; left:-100px;
+  }
+  .contact-copy{position:relative;}
+  .contact-copy h2{font-size:clamp(1.7rem, 3vw, 2.3rem);}
+  .contact-copy p{color:var(--text-muted); margin-top:1rem; max-width:32rem;}
+  .contact-list{margin-top:2rem; display:grid; gap:1rem; position:relative;}
+  .contact-link{
+    display:flex; align-items:center; gap:0.9rem; text-decoration:none; color:var(--text);
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md);
+    padding:1rem 1.2rem; transition:border-color .25s var(--ease), transform .25s var(--ease);
+  }
+  .contact-link:hover{border-color:var(--cyan); transform:translateX(4px);}
+  .contact-link .ic{
+    width:38px; height:38px; border-radius:50%; background:var(--cyan-soft); color:var(--cyan);
+    display:grid; place-items:center; flex-shrink:0;
+  }
+  .contact-link small{display:block; color:var(--text-faint); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.04em;}
+  .contact-link strong{font-weight:600; font-size:0.95rem; word-break:break-word;}
+  @media (max-width: 860px){ .contact-wrap{grid-template-columns:1fr; padding:2.2rem;} }
+
+  footer{
+    padding:2.6rem 0 3rem; text-align:center; color:var(--text-faint); font-size:0.85rem;
+    border-top:1px solid var(--border); margin-top:2rem;
+  }
+  footer a{color:var(--cyan); text-decoration:none;}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand" aria-label="Baron Sam B, home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Baron Sam B<small>Assistant Professor · Researcher</small></span>
+    </a>
+
+    <nav class="primary" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2 12h2.4M19.6 12H22M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobile-panel">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#research">Research</a>
+  <a href="#projects">Projects</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-eyebrow reveal in"><span class="pulse-dot" aria-hidden="true"></span> Chennai, Tamil Nadu, India</div>
+        <h1 class="reveal in">Baron Sam <span>B</span></h1>
+        <p class="hero-role reveal in">Assistant Professor &amp; IEEE Coordinator, Department of Computer Science — Sathyabama University, Chennai.</p>
+        <p class="hero-desc reveal in">Researcher in Medical Image Restoration for MR/CT images of the human abdomen, currently pursuing a Ph.D. in Medical Image Processing. Working to bring knowledge, resourcefulness and innovation to a challenging academic environment.</p>
+        <div class="hero-cta reveal in">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#research" class="btn btn-ghost">View research</a>
+        </div>
+        <div class="hero-stats reveal in">
+          <div class="stat"><strong>4.6+</strong><span>Yrs at Sathyabama Univ.</span></div>
+          <div class="stat"><strong>21</strong><span>Scopus-indexed papers</span></div>
+          <div class="stat"><strong>2</strong><span>H-index</span></div>
+          <div class="stat"><strong>14</strong><span>Citations</span></div>
+        </div>
+      </div>
+
+      <div class="scan-wrap reveal in" aria-hidden="true">
+        <div class="scan-ring"></div>
+        <div class="scan-ring r2"></div>
+        <div class="scan-ring r3"></div>
+        <div class="scan-ring r4"></div>
+        <div class="scan-crosshair"></div>
+        <div class="scan-sweep"></div>
+        <div class="scan-core"></div>
+        <span class="scan-tick t1">MR / CT — SLICE 01</span>
+        <span class="scan-tick t2">ABDOMEN · RESTORATION</span>
+        <span class="scan-tick t3">Φ</span>
+        <span class="scan-tick t4">Ψ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">About</div>
+        <h2>Educator, researcher, and IEEE coordinator</h2>
+        <p>A snapshot of my objective, academic qualifications and personal profile.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="about-card">
+            <h3 style="font-size:1.05rem; margin-bottom:0.6rem;">Objective</h3>
+            <p>To work with a reputed institution as an Assistant Professor, adding value to the institution by utilizing my knowledge and skills in a challenging environment that offers professional growth while being resourceful, innovative and flexible.</p>
+          </div>
+
+          <div class="about-card">
+            <h3 style="font-size:1.05rem; margin-bottom:1rem;">Academic qualification</h3>
+            <div class="quals">
+              <div class="qual-item">
+                <span class="qual-badge">Ph.D</span>
+                <div><strong>Medical Image Processing</strong><small>Pursuing · Sathyabama University, Chennai</small></div>
+              </div>
+              <div class="qual-item">
+                <span class="qual-badge">MBA</span>
+                <div><strong>Human Resource Management</strong><small>Annamalai University, Chidambaram · 2013</small></div>
+              </div>
+              <div class="qual-item">
+                <span class="qual-badge">M.Tech</span>
+                <div><strong>Computer Science Engineering</strong><small>VelTech Technical University, Chennai · 2011 · 8.58 CGPA</small></div>
+              </div>
+              <div class="qual-item">
+                <span class="qual-badge">B.Tech</span>
+                <div><strong>Information Technology</strong><small>CSI Institute of Technology, Thovalai (Anna University) · 2009 · 66%</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="about-card">
+            <h3 style="font-size:1.05rem; margin-bottom:0.4rem;">Personal data</h3>
+            <dl class="info-list">
+              <div class="info-row"><dt>Father's name</dt><dd>Ben Ebenezer Sam S</dd></div>
+              <div class="info-row"><dt>Date of birth</dt><dd>7 March 1988</dd></div>
+              <div class="info-row"><dt>Sex</dt><dd>Male</dd></div>
+              <div class="info-row"><dt>Nationality</dt><dd>Indian</dd></div>
+              <div class="info-row"><dt>Languages</dt><dd>English, Tamil</dd></div>
+              <div class="info-row"><dt>Address</dt><dd>Kanyakumari Dist., Tamil Nadu — 629166</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Skills</div>
+        <h2>Areas of interest &amp; subjects handled</h2>
+        <p>Domains I research in, and the courses I teach.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-panel reveal">
+          <h3><span class="dot" aria-hidden="true"></span> Area of interest</h3>
+          <div class="tag-cloud">
+            <span class="tag">Image Processing</span>
+            <span class="tag">Internet of Things</span>
+            <span class="tag">Computer Networks</span>
+          </div>
+        </div>
+        <div class="skill-panel reveal">
+          <h3><span class="dot" aria-hidden="true"></span> Subjects handled</h3>
+          <div class="tag-cloud">
+            <span class="tag">Programming Languages</span>
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C / C++</span>
+            <span class="tag">Internet of Things</span>
+            <span class="tag">Hardware Peripherals &amp; Interfacing</span>
+            <span class="tag">Operating Systems</span>
+            <span class="tag">Object Oriented Analysis &amp; Design</span>
+            <span class="tag">Network Architecture &amp; Protocol</span>
+            <span class="tag">Distributed Computing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Experience</div>
+        <h2>Professional profile</h2>
+        <p>Academic roles held across two institutions in Chennai.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card">
+            <div class="tl-period">2013 — Present · 4.6 years</div>
+            <h3>Assistant Professor &amp; IEEE Coordinator</h3>
+            <div class="tl-org">Department of Computer Science, Sathyabama University, Chennai</div>
+            <p>Teaching and research role in the Computer Science department, alongside coordinating IEEE activities for the department.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card">
+            <div class="tl-period">2011 — 2013 · 1.8 years</div>
+            <h3>Assistant Professor</h3>
+            <div class="tl-org">VelTech Multitech Dr.RR &amp; Dr.SR Engineering College, Chennai</div>
+            <p>Mentoring and coordinating with reputed industries and institutions for activities related to in-plant training and project assignments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Education</div>
+        <h2>Educational profile</h2>
+        <p>From secondary school through doctoral research.</p>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="yr">Pursuing</div>
+          <h4>Ph.D — Medical Image Processing</h4>
+          <p>Researcher in Medical Image Restoration of MR/CT images of the human abdomen · Sathyabama University, Chennai</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="yr">2013</div>
+          <h4>MBA — Human Resource Management</h4>
+          <p>Annamalai University, Chidambaram</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="yr">2011</div>
+          <h4>M.Tech — Computer Science Engineering</h4>
+          <p>VelTech Technical University, Chennai · 8.58 CGPA</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="yr">2009</div>
+          <h4>B.Tech — Information Technology</h4>
+          <p>CSI Institute of Technology, Thovalai (Anna University, Chennai) · 66%</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="yr">Apr 2005</div>
+          <h4>HSC</h4>
+          <p>CSI VV School, Irenepuram · 82%</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="yr">Apr 2003</div>
+          <h4>SSLC</h4>
+          <p>St. Mary Goretty School, Manalikarai · 77%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Research</div>
+        <h2>Medical image restoration &amp; publications</h2>
+        <p>Primary research focus, publication metrics, and the full record of authored work.</p>
+      </div>
+
+      <div class="research-hero">
+        <div class="research-focus reveal">
+          <h3>Research focus</h3>
+          <p>Medical Image Restoration in MR/CT Images of the Human Abdomen — investigating denoising, fusion, and restoration techniques for diagnostic clarity, pursued as part of ongoing Ph.D. research at Sathyabama University, Chennai.</p>
+        </div>
+        <div class="metric-grid reveal">
+          <div class="metric"><strong>1</strong><span>Web of Science</span></div>
+          <div class="metric"><strong>21</strong><span>Scopus indexed</span></div>
+          <div class="metric"><strong>2</strong><span>H-index</span></div>
+          <div class="metric"><strong>14</strong><span>Citations</span></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="pub-tabs" role="tablist" aria-label="Publication categories">
+          <button class="pub-tab" role="tab" aria-selected="true" aria-controls="pub-wos" id="tab-wos">Web of Science</button>
+          <button class="pub-tab" role="tab" aria-selected="false" aria-controls="pub-journal" id="tab-journal">Intl. Journals (Scopus)</button>
+          <button class="pub-tab" role="tab" aria-selected="false" aria-controls="pub-conf" id="tab-conf">Intl. Conferences (Scopus)</button>
+          <button class="pub-tab" role="tab" aria-selected="false" aria-controls="pub-scholar" id="tab-scholar">Google Scholar Indexed</button>
+        </div>
+
+        <div class="pub-panel active" id="pub-wos" role="tabpanel" aria-labelledby="tab-wos">
+          <div class="pub-list">
+            <div class="pub-item"><strong>B. Baron Sam, M. Saravanan</strong> — "A combined score level fusion approach for multi model biometric system using left and right palm print"<span class="src">International Journal of Advanced and Applied Sciences</span></div>
+          </div>
+        </div>
+
+        <div class="pub-panel" id="pub-journal" role="tabpanel" aria-labelledby="tab-journal">
+          <div class="pub-list">
+            <div class="pub-item"><strong>Baron Sam B., Devu Vamsi Krishna, T. Harish Reddy</strong> — "Against Phishing Utilizing Visual Cryptography, OTP and Security Pictures"<span class="src">ARPN Journal of Engineering and Applied Sciences, Vol. 11, No. 23, Dec 2016, pp. 13659–13664</span></div>
+            <div class="pub-item"><strong>Baron Sam B, Geo George</strong> — "An Android Based Application for Alerting the Eldercaregiver Monitoring Paradigm"<span class="src">International Journal of Applied Engineering Research, Vol. 10, No. 2, 2015, pp. 3321–3328</span></div>
+            <div class="pub-item"><strong>B. Baron Sam, S. Balaji, A. Anthuvan Jerald Majella, K. Ashokkumar</strong> — "Using Mobile Robots to Act as Surveillance in the Crop Field"<span class="src">International Journal of Applied Engineering Research, Vol. 10, No. 6, 2015, pp. 15825–15832</span></div>
+            <div class="pub-item"><strong>B. Baron Sam, A.V.K. Shanthi</strong> — "Query Oriented User Profile Management in Web Search Engine"<span class="src">International Journal of Applied Engineering Research, Vol. 10, No. 76, 2015 (Special Issue), pp. 295–300</span></div>
+            <div class="pub-item"><strong>Baron Sam B, Yuvashree S, Piosajin A</strong> — "CT and MRI Denoising Technique from Corrupted Riccian and Gaussian Noise"<span class="src">Research Journal of Pharmaceutical, Biological and Chemical Sciences, Vol. 7(1), 2016, p. 922</span></div>
+            <div class="pub-item"><strong>Baron Sam B, Monisha IR, Nithiya Dhevi K</strong> — "Denoising Technique of CT, MRI Abdominal Images Using Block Matching and Hybrid Filter"<span class="src">Research Journal of Pharmaceutical, Biological and Chemical Sciences, Vol. 7(3), 2016, p. 1397</span></div>
+            <div class="pub-item"><strong>Baron Sam B, KrishnaSagar K, Prudhvi Raj K</strong> — "Using Image Retrieval to Perform Computer-Aided Diagnosis of Mammographic Masses"<span class="src">Research Journal of Pharmaceutical, Biological and Chemical Sciences, Vol. 7(3), 2016, p. 1643</span></div>
+            <div class="pub-item"><strong>Baron Sam B, Preethi, Shanmuga Priya T</strong> — "Spine Image Fusion and Detection of Defect Region by Using MMA and SGNN"<span class="src">Research Journal of Pharmaceutical, Biological and Chemical Sciences, Vol. 7(4), 2016, p. 2827</span></div>
+            <div class="pub-item"><strong>K. Ashokkumar, Baron Sam, R. Arshadprabhu, Britto</strong> — "Cloud Based Intelligent Transport System"<span class="src">Procedia Computer Science 50, Elsevier, 2015, pp. 58–63 · doi:10.1016/j.procs.2015.04.061</span></div>
+            <div class="pub-item"><strong>S. Dhamodaran, B. Baron Sam, J. Refonaa</strong> — "Study of Land Management System in Urban Area Development Using Geographic Information System"<span class="src">International Journal of Applied Engineering Research, Vol. 10, No. 76, 2015, pp. 353–358</span></div>
+            <div class="pub-item"><strong>A. Pio Sajin, R. Aswini, B. Baron Sam</strong> — "Distributed and Improvised Up-Growth Approach for Utility Based Mining"<span class="src">International Journal of Applied Engineering Research, Vol. 10, No. 1, 2015, pp. 2023–2029</span></div>
+            <div class="pub-item"><strong>J. Refonaa, S. Dhamodaran, B. Baron Sam</strong> — "Data Routing Network in Aggregation for Wireless Sensor Network"<span class="src">International Journal of Applied Engineering Research, Vol. 10, No. 76, 2015, pp. 82–86</span></div>
+            <div class="pub-item"><strong>A. Pio Sajin, S. Devagladis, G. Hansie Shylu, Baron Sam B</strong> — "An Expert System to Deduce Knowledge on Cause for Variant Diseases Using Mining Techniques"<span class="src">Research Journal of Pharmacy and Technology, Vol. 10(3), p. 857</span></div>
+          </div>
+        </div>
+
+        <div class="pub-panel" id="pub-conf" role="tabpanel" aria-labelledby="tab-conf">
+          <div class="pub-list">
+            <div class="pub-item"><strong>B. Baron Sam, F. Gregoline Tharika, K. Infant Luxci, N.V. Rajeesh Kumar</strong> — "A Survey on Image Restoration Using Hybrid Channel Based on Firefly Algorithm"<span class="src">ICICES 2017, pp. 1–6</span></div>
+            <div class="pub-item"><strong>B. Baron Sam, Devina, Shalini, Stefi Sterlin</strong> — "A Survey on Personal Identification of Left and Right Palmprint Images"<span class="src">ICICES 2017, pp. 1–7</span></div>
+            <div class="pub-item"><strong>D. Kavya Priya, B. Baron Sam, S. Lavanya, A. Pio Sajin</strong> — "A Survey on Medical Image Denoising Using Optimisation Technique and Classification"<span class="src">ICICES 2017, pp. 1–6</span></div>
+            <div class="pub-item"><strong>E. Saranya, B. Baron Sam, R. Sethuraman</strong> — "Speech to Text User Assistive Agent System for Impaired Person"<span class="src">IEEE ICSTM 2017, pp. 221–226</span></div>
+            <div class="pub-item"><strong>S. Anu Ranjana, C.L. Stefi Sterlin, W.V. Benita, B. Baron Sam</strong> — "Secure and Concealment in Cluster Based Framework on Vehicular Networks"<span class="src">ICICES 2017, pp. 1–6</span></div>
+            <div class="pub-item"><strong>N.V. Rajeesh Kumar, Akella Srikanth, Arunangshu Singha, B. Baron Sam</strong> — "Comparison of LiFi and WiFi and Study of Smart Meter — Survey"<span class="src">ICICES 2017, pp. 1–8</span></div>
+            <div class="pub-item"><strong>B.S.B. Praveen, A.V. Sarveswara Reddy, B. Baron Sam, N.V. Rajeesh Kumar</strong> — "Study on IoT with Reference of M2M and WiFi"<span class="src">ICICES 2017, pp. 1–6</span></div>
+            <div class="pub-item"><strong>Baron Sam B, K. Ashokkumar, S.G. Surya Prakash, Y. Kannadhasan, A. Vignesh</strong> — "Separation of Encrypted and Compressed Image with Auxiliary Information"<span class="src">IEEE ICCSP 2015, pp. 1385–1388</span></div>
+          </div>
+        </div>
+
+        <div class="pub-panel" id="pub-scholar" role="tabpanel" aria-labelledby="tab-scholar">
+          <div class="pub-list">
+            <div class="pub-item"><strong>Baron Sam B</strong> — "Restructure Effective Examining Based on User Search Goals with Feedback Sessions"<span class="src">International Journal of Computer Science and Information Technologies, Vol. 5(2), 2014, pp. 2284–2288</span></div>
+            <div class="pub-item"><strong>Vinay C. Warad, Baron Sam B</strong> — "Incremental MVS Based Clustering Method for Similarity Measurement"<span class="src">International Journal of Computer Science and Information Technologies, Vol. 5(2), 2014, pp. 1486–1491</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Projects</div>
+        <h2>Coordination &amp; industrial collaboration</h2>
+        <p>Project and training initiatives coordinated across academic and industry partners.</p>
+      </div>
+
+      <div class="proj-grid">
+        <div class="proj-card reveal">
+          <h3>🎓 In-Plant Training &amp; Project Coordinator</h3>
+          <p>Arranged student projects in government sectors and reputed industries as In-Plant Training &amp; Project Coordinator at VelTech Multitech Dr.RR &amp; Dr.SR Engineering College.</p>
+          <div class="chip-row">
+            <span class="chip">CSIR</span><span class="chip">SERC</span><span class="chip">CRIS</span><span class="chip">TCOE</span>
+            <span class="chip">C-DOT</span><span class="chip">C-DAC</span><span class="chip">RAILTEL</span><span class="chip">TCIL</span>
+            <span class="chip">BSNL</span><span class="chip">VECC</span><span class="chip">CERT-IN</span><span class="chip">South Western Railway</span>
+            <span class="chip">STQC</span><span class="chip">ISRO</span><span class="chip">KELTRON</span><span class="chip">NIXI</span><span class="chip">NSIC</span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal">
+          <h3>🤝 Industrial Collaborations &amp; MoUs</h3>
+          <p>Arranged industrial collaborations and Memorandums of Understanding (MoUs) at VelTech Multitech Dr.RR &amp; Dr.SR Engineering College, connecting the institution with industry partners.</p>
+        </div>
+
+        <div class="proj-card reveal">
+          <h3>⚡ SILICON 2017 — National Technical Symposium</h3>
+          <p>Organised a National Level Technical Symposium in association with the IEEE Madras Section, held 15–16 Feb 2017 at Sathyabama University.</p>
+        </div>
+
+        <div class="proj-card reveal">
+          <h3>🔬 INSPIRE — DST Sponsored Program</h3>
+          <p>Coordinated INSPIRE (Innovation in Science for Inspired Research), sponsored by the Department of Science and Technology, Govt. of India, 1–5 Oct 2011, VelTech University, Chennai.</p>
+        </div>
+
+        <div class="proj-card reveal">
+          <h3>🖼️ IUCEE Image Processing Workshop</h3>
+          <p>Coordinated a one-week workshop on image processing and visualization under the Indo-US Collaboration for Engineering Education (IUCEE), 1–5 Aug 2011, VelTech University, Chennai.</p>
+        </div>
+
+        <div class="proj-card reveal">
+          <h3>🏆 VISAI — International Project Exhibition</h3>
+          <p>Coordinated VISAI, an international project exhibition &amp; competition, Feb 2012, VelTech University, Chennai — plus the monthly CSE, IT &amp; MCA Research &amp; Development Review.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Achievements</div>
+        <h2>Conferences, workshops &amp; training attended</h2>
+        <p>Presentations delivered and professional development completed.</p>
+      </div>
+
+      <div class="ach-grid">
+        <div class="ach-card reveal"><span class="ach-num">IEEE · 2017</span><p>Presented a paper at IEEE conference ICSTM 2017, 2–4 Aug, VelTech University.</p></div>
+        <div class="ach-card reveal"><span class="ach-num">FDP · 2017</span><p>Participated in a National Level FDP on Computer Vision and Image Processing, Sathyabama University, 31 Jul – 5 Aug 2017.</p></div>
+        <div class="ach-card reveal"><span class="ach-num">Lecture · 2017</span><p>Participated in a Guest Lecture on Web Based Design and Delivery of Educational Contents, 27 Jan 2017, Sathyabama University.</p></div>
+        <div class="ach-card reveal"><span class="ach-num">IEEE · 2017</span><p>Presented papers at the 6th IEEE International Conference ICICES 2017, 23–24 Feb 2017, SA Engineering College.</p></div>
+        <div class="ach-card reveal"><span class="ach-num">TTT · 2016</span><p>Attended a 3-day training program on "Train the Trainer (TTT)" organized by TechM, May 2016.</p></div>
+        <div class="ach-card reveal"><span class="ach-num">Training · 2014</span><p>Attended LaTeX Training, organized by Sathyabama University, 17 Oct 2014.</p></div>
+        <div class="ach-card reveal"><span class="ach-num">Workshop · 2011</span><p>Participated in a National Level Workshop on Techniques and Tools in Data Mining, Sathyabama University, 8–9 Sep 2011.</p></div>
+        <div class="ach-card reveal"><span class="ach-num">Seminar</span><p>Attended a seminar at C-DAC on GPS and Multilingual Computing.</p></div>
+        <div class="ach-card reveal"><span class="ach-num">Conference</span><p>Attended the National Conference "Research Challenges in Wireless Sensor Networks," Dept. of Electronics Engineering, Anna University.</p></div>
+        <div class="ach-card reveal"><span class="ach-num">Colloquium</span><p>Presented a colloquium on "Generate Secure Mobile Agent by using SMS" at C-DAC.</p></div>
+        <div class="ach-card reveal"><span class="ach-num">Diploma</span><p>Completed a Post Diploma in Computer Application (PDCA).</p></div>
+        <div class="ach-card reveal"><span class="ach-num">Metrics</span><p>1 Web of Science paper, 21 Scopus-indexed publications, H-index of 2, 14 citations.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="contact-copy">
+          <div class="eyebrow">Contact</div>
+          <h2>Let's connect</h2>
+          <p>Open to academic, research, and speaking opportunities. Reach out by email or phone — I'm based in Kanyakumari District, Tamil Nadu, and currently working in Chennai.</p>
+        </div>
+
+        <div class="contact-list">
+          <a class="contact-link" href="mailto:baronsam1988@gmail.com">
+            <span class="ic" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span><small>Email</small><strong>baronsam1988@gmail.com</strong></span>
+          </a>
+          <a class="contact-link" href="tel:+919865929424">
+            <span class="ic" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2Z"/></svg></span>
+            <span><small>Phone</small><strong>+91&nbsp;98659&nbsp;29424</strong></span>
+          </a>
+          <a class="contact-link" href="tel:04651252094">
+            <span class="ic" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2Z"/></svg></span>
+            <span><small>Landline</small><strong>04651&nbsp;252094</strong></span>
+          </a>
+          <div class="contact-link" style="cursor:default;">
+            <span class="ic" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span><small>Address</small><strong>SBSR Cottage, Pandivilai, Meckamandapam (P.O), Kanyakumari Dist., Tamil Nadu — 629166</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> Baron Sam B. Built with care · <a href="mailto:baronsam1988@gmail.com">baronsam1988@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---- theme (in-memory + system preference, no storage APIs) ---- */
+  var root = document.documentElement;
+  var mql = window.matchMedia('(prefers-color-scheme: light)');
+  root.setAttribute('data-theme', mql.matches ? 'light' : 'dark');
+  var themeBtn = document.getElementById('theme-toggle');
+  themeBtn.addEventListener('click', function(){
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+  });
+
+  /* ---- mobile menu ---- */
+  var menuBtn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  function closeMenu(){
+    panel.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuBtn.setAttribute('aria-label', 'Open menu');
+  }
+  menuBtn.addEventListener('click', function(){
+    var open = panel.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+
+  /* ---- active nav link on scroll ---- */
+  var sections = document.querySelectorAll('main section[id]');
+  var navLinks = document.querySelectorAll('nav.primary a');
+  var navObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        var id = entry.target.getAttribute('id');
+        navLinks.forEach(function(l){
+          l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+  sections.forEach(function(s){ navObserver.observe(s); });
+
+  /* ---- reveal on scroll ---- */
+  var revealEls = document.querySelectorAll('.reveal');
+  var revealObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('in');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(function(el){ revealObserver.observe(el); });
+
+  /* ---- publication tabs ---- */
+  var tabs = document.querySelectorAll('.pub-tab');
+  var panels = document.querySelectorAll('.pub-panel');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+      tabs.forEach(function(t){ t.setAttribute('aria-selected', 'false'); });
+      panels.forEach(function(p){ p.classList.remove('active'); });
+      tab.setAttribute('aria-selected', 'true');
+      document.getElementById(tab.getAttribute('aria-controls')).classList.add('active');
+    });
+  });
+
+  /* ---- footer year ---- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
